@@ -1,0 +1,34 @@
+@use "utils" as *;
+
+.nav {
+    @include flexCenter;
+    gap: 1rem;
+    padding-top:1rem;
+    @include setWandH(100%, var(--logoHeight));
+    box-shadow: 0 4px 6px -5px;
+    transition: width 1s ease;
+    /* border: 1px solid black; */
+}
+
+.toggle-btn {
+    font-size: 2em;
+    background-color: transparent;
+    border:none;
+    color: var(--mainColor);
+    margin-left: 1rem;
+    &:hover {
+        cursor: pointer;
+    }
+
+}
+
+.navItems {
+    @include flexCenter(space-around);
+    width: 30%;
+    /* gap: 1rem; */
+}
+
+.navTitle {
+    margin-left: auto;
+}
+

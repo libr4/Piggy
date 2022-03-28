@@ -1,0 +1,31 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.7fr;
+    grid-gap: 1rem;
+    /* place-items:; */
+
+    margin-left: 1rem;
+    max-width: 100%;
+
+    /* width: calc(100% - var(--sidebar)); */
+    transition: width 1s ease;
+    height:80vh;
+    width:80%;
+}
+
+.one, .two, .three, .four {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .one {
+    grid-row: span 1;
+} */
+
+.three {
+    grid-row: span 2;
+}
+

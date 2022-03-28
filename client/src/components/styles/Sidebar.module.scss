@@ -1,0 +1,30 @@
+@use "utils" as *;
+
+.sidebarWrapper {
+    width: 250px;
+    transition: width 300ms ease-in;
+    overflow: hidden; 
+}
+
+.sidebar {
+    @include setWandH(99%, 100%);
+    box-shadow: 0 8px 12px -4px;
+    margin-top: 1rem;  
+}
+
+.menuList {
+    padding-left:0;
+    list-style-type: none;  
+    white-space: nowrap;
+    li {
+        padding: 1rem 2rem;
+        &:hover {
+            background-color: var(--mainColor);
+            cursor: pointer;
+        }
+    }
+}
+
+.hideSidebar {
+    width:0;
+}

@@ -1,0 +1,55 @@
+@use "utils" as *;
+
+.dropdownContainer {
+    margin-left: auto;
+    margin-right: 10rem;
+    position:relative;
+    width: 120px;
+    // @include tester;
+}
+
+.dropdown-btn {
+    @include btnStyle();
+    width: 100%;
+    padding: 0.5rem 1rem;
+    &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+    }
+}
+
+.menu {
+    position:absolute;
+    height:0;
+    overflow:hidden;
+    transition: height 300ms ease;
+    @include btnStyle(white);
+    width:100%;
+    div {
+        opacity: 0.7;
+        padding: 0.5rem 1rem;
+        background-color: var(--mainColor);
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+    
+    scrollbar-color: pink;
+    scrollbar-width: 5px;
+    &::-webkit-scrollbar {
+        width: 5px;
+    } 
+      &::-webkit-scrollbar-track {
+        background: pink; 
+    }
+      &::-webkit-scrollbar-thumb {
+        background: black; 
+        height: 10px;
+    }
+}
+
+.drop {   
+    height:100px;
+    overflow-y: auto;
+}

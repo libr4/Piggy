@@ -1,0 +1,24 @@
+$piggyColor:#FA7590;
+
+@mixin flexCenter($jContent:center) {
+    display: flex;
+    justify-content: $jContent;
+    align-items: center;
+}
+
+@mixin setWandH($width, $height) {
+    width:$width;
+    height:$height;
+}
+
+@mixin btnStyle($color:var(--mainColor)) {
+    background-color: $color;
+    color:white;
+    font-weight: 900;
+    border: none;
+    font-size: 1rem;
+}
+
+@mixin tester($borderColor:black) {
+    border: 1px solid $borderColor;
+}
